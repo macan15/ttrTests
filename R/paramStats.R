@@ -324,6 +324,7 @@ if(loud) cat("\n****************************************************************
 if(loud) cat("\nBest Mean Excess Return:",max(cMean),"for Parameters:",rBest,"\n")
 if(loud) cat("Best Mean Adjusted Excess Return:",max(aRet),"for Parameters:",aBest,"\n")
 if(loud) cat("Best Sharpe(0):",max(s0),"for Parameters:",sBest,"\n")
+if(loud) cat("Total rules(Mean Excess Return - rMax):",rMax," cMean:",sum(cMean>0),"\n")
 if(plot) plot(cMean,main="Excess Returns",ylab="Conditional Mean - Benchmark Mean",xlab="Parameter Choice")
 if(! file=="")
 	{
